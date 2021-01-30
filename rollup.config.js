@@ -18,6 +18,6 @@ export default {
 			sourcemap: true,
 		},
 	],
-	external: ['react'],
+	external: ['react', 'pwa-install-handler'],
 	plugins: [peerDepsExternal(), resolve(), commonjs(), typescript()],
 }
