@@ -26,6 +26,8 @@ export const Header = () => {
 }
 ```
 
+Don't forget to fulfill PWA requirements ([web.dev](https://web.dev/install-criteria/), [mdn](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs)) otherwise the `usePWAInstall` will return `null`. Same goes for already installed app.
+
 ### Screencast
 
 ![UI example](https://raw.githubusercontent.com/FilipChalupa/pwa-install-handler/HEAD/screencast.gif)
