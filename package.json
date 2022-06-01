@@ -33,15 +33,16 @@
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^16.0.0",
 		"@rollup/plugin-node-resolve": "^10.0.0",
+		"@types/react": "^18.0.10",
 		"prettier": "^2.1.2",
+		"react": "^18.1.0",
 		"rollup": "^2.33.1",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-typescript2": "^0.29.0",
 		"typescript": "^4.0.5"
 	},
 	"peerDependencies": {
-		"@types/react": "^16.9.55",
-		"react": "^17.0.1"
+		"react": "17 || 18"
 	},
 	"prettier": {
 		"semi": false,
