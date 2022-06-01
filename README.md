@@ -1,4 +1,4 @@
-# react-use-pwa-install [![npm](https://img.shields.io/npm/v/react-use-pwa-install.svg)](https://www.npmjs.com/package/react-use-pwa-install) [![Dependencies](https://img.shields.io/david/FilipChalupa/react-use-pwa-install.svg)](https://www.npmjs.com/package/react-use-pwa-install?activeTab=dependencies) ![npm type definitions](https://img.shields.io/npm/types/react-use-pwa-install.svg)
+# react-use-pwa-install [![npm](https://img.shields.io/npm/v/react-use-pwa-install.svg)](https://www.npmjs.com/package/react-use-pwa-install) ![npm type definitions](https://img.shields.io/npm/types/react-use-pwa-install.svg)
 
 Custom React hook for PWA install button.
 
