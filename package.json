@@ -27,14 +27,12 @@
 		"url": "https://www.npmjs.com/~onset"
 	},
 	"license": "ISC",
-	"dependencies": {
-		"pwa-install-handler": "^2.1.4"
-	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^16.0.0",
 		"@rollup/plugin-node-resolve": "^10.0.0",
 		"@types/react": "^18.0.10",
 		"prettier": "^2.1.2",
+		"pwa-install-handler": "^2.2.0",
 		"react": "^18.1.0",
 		"rollup": "^2.33.1",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
