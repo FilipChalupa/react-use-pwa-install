@@ -1,6 +1,6 @@
 {
 	"name": "react-use-pwa-install",
-	"version": "0.1.3",
+	"version": "0.2.0",
 	"description": "Custom React hook for PWA install button.",
 	"main": "./dist/index.js",
 	"module": "./dist/index.es.js",
