@@ -1,4 +1,4 @@
-import pwaInstallHandler from 'pwa-install-handler'
+import { pwaInstallHandler } from 'pwa-install-handler'
 import React from 'react'
 
 export function usePWAInstall(): () => Promise<boolean> | null {
