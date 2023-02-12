@@ -29,7 +29,7 @@
 	},
 	"license": "ISC",
 	"dependencies": {
-		"pwa-install-handler": "^2.3.0"
+		"pwa-install-handler": "^2.4.0"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^24.0.1",
