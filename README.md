@@ -11,7 +11,6 @@ npm install react-use-pwa-install
 ## How to use
 
 ```jsx
-import React from 'react'
 import { usePWAInstall } from 'react-use-pwa-install'
 
 export const Header = () => {
