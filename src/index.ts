@@ -1,15 +1,18 @@
 import { pwaInstallHandler } from 'pwa-install-handler'
-import { useEffect, useState } from 'react'
+import { useCallback, useSyncExternalStore } from 'react'
 
-export function usePWAInstall(): (() => Promise<boolean>) | null {
-	const [canInstall, setCanInstall] = useState(false)
-
-	useEffect(() => {
-		pwaInstallHandler.addListener(setCanInstall)
+export const usePWAInstall: () => (() => Promise<boolean>) | null = () => {
+	const subscribe = useCallback((onStoreChange: () => void) => {
+		pwaInstallHandler.addListener(onStoreChange)
 		return () => {
-			pwaInstallHandler.removeListener(setCanInstall)
+			pwaInstallHandler.removeListener(onStoreChange)
 		}
 	}, [])
+	const getSnapshot = useCallback(
+		() => (pwaInstallHandler.canInstall() ? pwaInstallHandler.install : null),
+		[],
+	)
+	const getServerSnapshot = useCallback(() => null, [])
 
-	return canInstall ? pwaInstallHandler.install : null
+	return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 }
