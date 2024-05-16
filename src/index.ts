@@ -1,10 +1,10 @@
 import { pwaInstallHandler } from 'pwa-install-handler'
-import React from 'react'
+import { useEffect, useState } from 'react'
 
 export function usePWAInstall(): () => Promise<boolean> | null {
-	const [canInstall, setCanInstall] = React.useState(false)
+	const [canInstall, setCanInstall] = useState(false)
 
-	React.useEffect(() => {
+	useEffect(() => {
 		pwaInstallHandler.addListener(setCanInstall)
 		return () => {
 			pwaInstallHandler.removeListener(setCanInstall)
